@@ -5,17 +5,25 @@
 
 # Declare variables
 PRIMITIVE="/bin/primitive"
+help="Usage : ./create.sh 5 100"
 
 inputfile="~/Pictures/Haz.jpg"
 outputfolder="./output/"
 ext="jpg"
 prefix="haz"
-shapecount=$1
+imagecount=$1
+shapecount=$2
 
 # Check if argument exists
-if [ $# -eq 0 ]; then
+if [ -z "$1" ]; then
+  echo "Please specify the image count"
+  echo "$help"
+  exit 1
+fi
+
+if [ -z "$2" ]; then
   echo "Please specify the shape count"
-  echo "Usage : ./create.sh 100"
+  echo "$help"
   exit 1
 fi
 
