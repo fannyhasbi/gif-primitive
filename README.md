@@ -1,0 +1,1 @@
+# GIF Primitive Auto-Generator
