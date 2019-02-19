@@ -1,6 +1,8 @@
 # GIF Primitive Auto-Generator
 Bash script for GIF Primitive image generator. See primitive repo [here](https://github.com/fogleman/primitive).
 
+!["GIF Primitive Auto-Generator - Fanny Hasbi"](./demo.gif "GIF Primitive Auto-Generator")
+
 ## Pre-requisite
 This repo is for generating [**primitive**](https://github.com/fogleman/primitive) images. So, you have to install it first. Make sure the primitive command is accessible through `/bin/primitive` or `/usr/bin/primitive`, if it's not so feel free to change the `$PRIMITIVE` value.
 
