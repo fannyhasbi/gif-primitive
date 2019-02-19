@@ -19,12 +19,22 @@ This repo is for generating [**primitive**](https://github.com/fogleman/primitiv
    ```
 
 ## Execution
-* Change the variables to whatever you want, or just use the default value.
-* Call it with first argument is the image count that want to be generated and the second argument is the shape number.
+```
+./create.sh $path $imagecount $shapecount 
+```
+
+Argument | Type | Description
+--- | --- | ---
+`$path` | string | Path to the image which want to be generated
+`$imagecount` | number | Number of generated image
+`$shapecount` | number | Number of shape
+
+1. Change the variables to whatever you want, or just use the default value.
+2. Call it
    ```
-   ./create 5 100
+   ./create.sh path/to/picture.jpg 5 100
    ```
 
    It means there will be 5 images with each contains 100 shapes.
 
-* Image generated, so the final step is to animate it using [gifmaker.me](https://gifmaker.me/)
+3. Image generated, so the final step is to animate it using [gifmaker.me](https://gifmaker.me/)
