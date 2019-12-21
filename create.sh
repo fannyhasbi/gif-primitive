@@ -49,14 +49,15 @@ fi
 i=1
 while [[ $i -le $imagecount ]];
 do
-  echo "Generating image... #$i"
+  printf "Generating image #$i... "
 
-  name="$prefix-$i.$ext"
+  index=$i
+  name="$prefix-$index.$ext"
   output="$outputfolder$name"
-  comm="$PRIMITIVE -i $inputfile -o $output -n $shapecount"
+  comm="$PRIMITIVE -i $inputfile -o $output -n $shapecount -m 1"
 
   eval $comm
-  printf "Image generated : $output\n\n"
+  printf "DONE : $output\n"
 
   (( i = i + 1))
 done
